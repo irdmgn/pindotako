@@ -1,0 +1,12 @@
+.slideshow {
+    height: 60vh;
+    size: 10em;
+}
+
+.audio {
+    display: flex;
+    justify-content: center;
+    align-items: bottom center;
+    height: 120vh;
+    
+}

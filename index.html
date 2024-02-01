@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">will u be my valentine?</h1>
+        </div>
+        <div class="gif_container">
+            <img src="https://i.pinimg.com/originals/65/56/67/6556671046c485e666780b9e5e52edb5.gif" alt="Cute animated illustration">
+        </div>
+        <div class="audio">
+            <audio autoplay hidden>
+                <source src="valentine.mp3" type="audio/mpeg">
+            </audio>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">HELL YEAH! </button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()"> no :3</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+                
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+        </div>
+    </div>
+   
+ 
+</body>
+</html>
